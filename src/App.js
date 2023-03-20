@@ -16,4 +16,4 @@ export default App;
 
 //https://www.youtube.com/watch?v=O-zxqT7RgrU&t=904s PRIMERA PARTE HEADER
 
-// https://www.youtube.com/watch?v=iiuF7dYaWDo SEGUNDA PARTE quede minuto 12:23
+// https://www.youtube.com/watch?v=iiuF7dYaWDo SEGUNDA PARTE quede minuto 14:58
