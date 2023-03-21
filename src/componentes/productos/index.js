@@ -1,5 +1,7 @@
 import React from "react";
 import IMG from "../../imagenes/tequeBlack.PNG";
+import IMG2 from "../../imagenes/tequeHeladera.PNG";
+import IMG3 from "../../imagenes/tequeSalsa.PNG";
 
 export const ProductosLista = () => {
   return (
@@ -30,7 +32,7 @@ export const ProductosLista = () => {
         <div className="producto">
           <a href="#">
             <div className="producto_img">
-              <img src={IMG} alt="" />
+              <img src={IMG2} alt="" />
             </div>
           </a>
           <div className="producto__footer">
@@ -52,7 +54,7 @@ export const ProductosLista = () => {
         <div className="producto">
           <a href="#">
             <div className="producto_img">
-              <img src={IMG} alt="" />
+              <img src={IMG3} alt="" />
             </div>
           </a>
           <div className="producto__footer">
