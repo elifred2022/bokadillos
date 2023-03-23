@@ -1,7 +1,8 @@
 import React from "react";
 import IMG from "../../imagenes/tequeBlack.PNG";
-import IMG2 from "../../imagenes/tequeHeladera.PNG";
+import IMG2 from "../../imagenes/tequeHeladera.png";
 import IMG3 from "../../imagenes/tequeSalsa.PNG";
+import IMG4 from "../../imagenes/tequeMonton.png";
 
 export const ProductosLista = () => {
   return (
@@ -17,7 +18,7 @@ export const ProductosLista = () => {
           <div className="producto__footer">
             <h1>Docena de Tequeños congelados</h1>
             <p>Refrigerados</p>
-            <p className="price">$630 precio al mayor</p>
+            <p className="price">$780 precio al menor</p>
           </div>
           <div className="buttom">
             <button className="btn">Añadir al carrito</button>
@@ -39,7 +40,7 @@ export const ProductosLista = () => {
             <h1>Docena de Tequeños congelados</h1>
             <p>Refrigerados</p>
 
-            <p className="price">$780 precio al menor</p>
+            <p className="price">$630 precio al mayor</p>
           </div>
           <div className="buttom">
             <button className="btn">Añadir al carrito</button>
@@ -76,7 +77,7 @@ export const ProductosLista = () => {
         <div className="producto">
           <a href="#">
             <div className="producto_img">
-              <img src={IMG} alt="" />
+              <img src={IMG4} alt="" />
             </div>
           </a>
           <div className="producto__footer">

@@ -1,23 +1,22 @@
 import React from "react";
 import Boka from "../../imagenes/logoBoka.png";
+import { Link } from "react-router-dom";
+// import { ProductosLista } from "../productos";<Link to="/productos">PRODUCTOS</Link>
 
 export const Header = () => {
   return (
     <header>
-      <div className="menu">
-        <box-icon name="menu"></box-icon>
-      </div>
-      <a href="#">
+      <Link to="/">
         <div className="logo">
           <img src={Boka} alt="logo" width={150} />
         </div>
-      </a>
+      </Link>
       <ul>
         <li>
-          <a href="#">INICIO</a>
+          <Link to="/">INICIO</Link>
         </li>
         <li>
-          <a href="#">PRODUCTOS</a>
+          <Link to="/productos">Productos</Link>
         </li>
       </ul>
       <div className="cart">
@@ -27,3 +26,7 @@ export const Header = () => {
     </header>
   );
 };
+
+/*  <div className="menu">
+        <box-icon name="menu"></box-icon>
+      </div>   esto es para el menu hamburguesa pero como no lo voy a utilizar por el momento se lo saque*/
