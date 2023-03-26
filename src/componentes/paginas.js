@@ -11,7 +11,7 @@ export const Paginas = () => {
     <section>
       <Switch>
         <Route exact path="/" component={Inicio} />
-        <Route path="/productos" component={ProductosLista} />
+        <Route exact path="/productos" component={ProductosLista} />
       </Switch>
     </section>
   );

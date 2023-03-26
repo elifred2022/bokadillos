@@ -1,36 +1,38 @@
-import React from "react";
+import React, { useContext } from "react";
 import IMG from "../../imagenes/tequeBlack.PNG";
 import IMG2 from "../../imagenes/tequeHeladera.png";
 import IMG3 from "../../imagenes/tequeSalsa.PNG";
 import IMG4 from "../../imagenes/tequeMonton.png";
+import { DataContext } from "../../context/Dataprovider";
+import { ProductoItem } from "./ProductoItem";
 
 export const ProductosLista = () => {
+  const value = useContext(DataContext);
+  const [productos] = value.productos;
+
+  console.log(productos);
+
   return (
     <>
       <h1 className="title">Productos</h1>
       <div className="productos">
-        <div className="producto">
-          <a href="#">
-            <div className="producto_img">
-              <img src={IMG} alt="" />
-            </div>
-          </a>
-          <div className="producto__footer">
-            <h1>Docena de Tequeños congelados</h1>
-            <p>Refrigerados</p>
-            <p className="price">$780 precio al menor</p>
-          </div>
-          <div className="buttom">
-            <button className="btn">Añadir al carrito</button>
-            <div>
-              <a href="#" className="btn">
-                Vista
-              </a>
-            </div>
-          </div>
-        </div>
+        {productos.map((producto) => (
+          <ProductoItem
+            key={producto.id}
+            id={producto.id}
+            title={producto.title}
+            price={producto.price}
+            image={producto.image}
+            category={producto.category}
+            cantidad={producto.cantidad}
+          />
+        ))}
+      </div>
+    </>
+  );
+};
 
-        <div className="producto">
+/*    <div className="producto">
           <a href="#">
             <div className="producto_img">
               <img src={IMG2} alt="" />
@@ -96,8 +98,4 @@ export const ProductosLista = () => {
               </a>
             </div>
           </div>
-        </div>
-      </div>
-    </>
-  );
-};
+        </div>   eiminamos los ejemplos q sirvieron para maquetar la app nos quedamos con uno solo*/
