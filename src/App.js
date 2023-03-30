@@ -5,6 +5,7 @@ import "boxicons";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Paginas } from "./componentes/Paginas";
 import { DataProvider } from "./context/Dataprovider";
+import { Carrito } from "./componentes/Carrito";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <div className="App">
         <Router>
           <Header />
-
+          <Carrito />
           <Paginas />
         </Router>
       </div>
@@ -26,6 +27,6 @@ export default App;
 
 // https://www.youtube.com/watch?v=iiuF7dYaWDo SEGUNDA PARTE quede minuto 37:12
 
-// https://www.youtube.com/watch?v=qNexFZQrOg8&list=PLGnBVzbgpM74-N7qvQbjAUwv-FjRMUHN3&index=11 TERCERA PARTE INICIO
+// https://www.youtube.com/watch?v=qNexFZQrOg8&list=PLGnBVzbgpM74-N7qvQbjAUwv-FjRMUHN3&index=11 TERCERA PARTE INICIO 17:58
 
 // me voy a documentar porque no funcionan los Link automaticamente hay q refrescar
