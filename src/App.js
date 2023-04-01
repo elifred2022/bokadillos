@@ -27,6 +27,6 @@ export default App;
 
 // https://www.youtube.com/watch?v=iiuF7dYaWDo SEGUNDA PARTE quede minuto 37:12
 
-// https://www.youtube.com/watch?v=qNexFZQrOg8&list=PLGnBVzbgpM74-N7qvQbjAUwv-FjRMUHN3&index=11 TERCERA PARTE INICIO 17:58
+// https://www.youtube.com/watch?v=qNexFZQrOg8&list=PLGnBVzbgpM74-N7qvQbjAUwv-FjRMUHN3&index=11 TERCERA PARTE INICIO 37:24
 
 // me voy a documentar porque no funcionan los Link automaticamente hay q refrescar
