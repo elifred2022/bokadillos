@@ -29,4 +29,6 @@ export default App;
 
 // https://www.youtube.com/watch?v=qNexFZQrOg8&list=PLGnBVzbgpM74-N7qvQbjAUwv-FjRMUHN3&index=11 TERCERA PARTE INICIO 37:24
 
-// me voy a documentar porque no funcionan los Link automaticamente hay q refrescar
+// no funcionan los Link react-router-dom automaticamente hay q refrescar
+
+// no funciona el useEffect no deja almacenado localstorage al refrescar
