@@ -31,4 +31,4 @@ export default App;
 
 // no funcionan los Link react-router-dom automaticamente hay q refrescar
 
-// no funciona el useEffect no deja almacenado localstorage al refrescar
+// no funciona el useEffect no deja almacenado localstorage al refrescar, archivo dataprovider.
