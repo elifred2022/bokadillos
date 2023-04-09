@@ -3,7 +3,7 @@ const data = {
   items: [
     {
       id: 1,
-      title: "Docena de Tequeños congelados",
+      title: "Docena de Tequeños congelados (precio detal)",
       price: 780,
       image: require("./imagenes/tequeBlack.PNG"),
       category: "precio venta al menor",
@@ -16,7 +16,7 @@ const data = {
     },
     {
       id: 2,
-      title: "Docena de Tequeños congelados",
+      title: "Docena de Tequeños congelados (precio al mayor)",
       price: 630,
       image: require("./imagenes/tequeHeladera.png"),
       category: "precio venta al mayor",
