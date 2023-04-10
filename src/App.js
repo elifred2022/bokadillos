@@ -34,3 +34,6 @@ export default App;
 // no funcionan los Link react-router-dom automaticamente hay q refrescar
 
 // no funciona el useEffect no deja almacenado localstorage al refrescar, archivo dataprovider.
+
+// OJO; usando etiqueta a si funcionan los link perro con etiqueta Link de react router
+// no funcionan. hay q refresacar para q funcione
