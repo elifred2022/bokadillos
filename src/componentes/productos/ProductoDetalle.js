@@ -79,20 +79,18 @@ export const ProductoDetalle = () => {
           />
           <div className="description">
             <p>
-              <b>description: </b> Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Cum necessitatibus soluta alias porro, saepe
-              facere expedita asperiores quos fugit inventore ex, itaque
-              sapiente quae pariatur beatae optio repellat aperiam quia possimus
-              mollitia repellendus? Illo natus quam eaque impedit omnis
-              pariatur!
+              <b>Que es un Tequeño? </b> Tambien conocido como dedito, palito de
+              queso, rollito de queso o tequeño es una preparación culinaria que
+              consiste en una masa de harina de trigo frita, rellena de queso
+              blanco o feta, entre otros rellenos.
             </p>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              vitae accusantium omnis, facere laudantium ipsa hic reprehenderit
-              blanditiis quibusdam quos repellendus id illo reiciendis magni,
-              aliquid beatae, consequatur sapiente! Sequi facere itaque,
+              Que ingredientes lleva? Harina de trigo, queso blanco, mozzarella,
+              sal, agua.
             </p>
+            <br />
+            <p>Coccion:</p>
           </div>
         </div>
       }
