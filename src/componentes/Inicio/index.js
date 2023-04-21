@@ -1,19 +1,21 @@
 import React from "react";
-import Picture from "../../imagenes/tequePartido.png";
+import Picture from "../../imagenes/tequeSalsa.PNG";
 import { Link } from "react-router-dom";
 
 export const Inicio = () => {
   return (
     <div className="inicio">
-      <Link to="/">
-        <h1>Inicio</h1>
-      </Link>
+      <div className="home_presentacion">
+        <img src={Picture}></img>
 
-      <Link to="/productos">
-        <h1>Productos</h1>
-      </Link>
+        <Link to="/productos">
+          <h1>Seccion de Productos</h1>
+        </Link>
 
-      <img src={Picture}></img>
+        <Link to="/Contactos">
+          <h1>Contactenos</h1>
+        </Link>
+      </div>
 
       <div className="description">
         <p>

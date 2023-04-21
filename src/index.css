@@ -232,9 +232,42 @@ header .cart span {
 }
 
 .inicio img {
-  width: 50%;
+  width: 40%;
+  height: 50%;
 }
 
+/******CONTACTOS********/
+.contactos {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 9rem;
+}
+
+.contactos h1 {
+  font-size: 2.5rem;
+  color: crimson;
+}
+
+.contactos img {
+  width: 40%;
+  height: 50%;
+}
+
+.formulario {
+  padding: 5rem 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 2rem;
+  box-sizing: border-box;
+
+}
+
+.formulario input {
+  
+  border-radius: 0.5rem;
+  
+}
 /* ---------------- CARRITO ------------------*/
 
 .carritos {

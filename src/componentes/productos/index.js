@@ -1,8 +1,4 @@
 import React, { useContext } from "react";
-import IMG from "../../imagenes/tequeBlack.PNG";
-import IMG2 from "../../imagenes/tequeHeladera.png";
-import IMG3 from "../../imagenes/tequeSalsa.PNG";
-import IMG4 from "../../imagenes/tequeMonton.png";
 import { DataContext } from "../../context/Dataprovider";
 import { ProductoItem } from "./ProductoItem";
 
@@ -14,7 +10,7 @@ export const ProductosLista = () => {
 
   return (
     <>
-      <h1 className="title">Productos</h1>
+      <h1 className="title">Seccion de Productos</h1>
       <div className="productos">
         {productos.map((producto) => (
           <ProductoItem
