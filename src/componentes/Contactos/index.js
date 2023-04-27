@@ -1,68 +1,66 @@
 import React from "react";
-import Picture from "../../imagenes/mapa.JPG";
+import emailjs from "@emailjs/browser";
+//import Picture from "../../imagenes/mapa.JPG";
 import { Link } from "react-router-dom";
 
 export const Contactos = () => {
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_04ub10z",
+        "template_gzz4xu5",
+        event.target,
+        "Lfqdb8OfXO68L-vVt"
+      )
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+  };
+
   return (
-    <div className="contactos">
-      <div className="home_presentacion">
-        <form className="formulario">
-          <ul>
-            <label>
-              <p>Nombres y apellidos</p>
-              <input
-                type="text"
-                id="nombre"
-                placeholder="tu nombe"
-                autocomplete="name"
-                required
-              />
-            </label>
-            <label>
-              <p>Email</p>
-              <input
-                type="email"
-                id="correo"
-                placeholder="ej; soyelmejorcliente@gmail.com"
-                required
-              />
-            </label>
-            <label>
-              <p>Deje su mensaje</p>
-              <textarea></textarea>
-            </label>
-            <div className="buttom">
-              <button className="btn">Enviar mensaje</button>
-            </div>
-          </ul>
-        </form>
+    <div className="div-form">
+      <h1 className="title">Contactenos</h1>
+      <form className="form-mail" onSubmit={sendEmail}>
+        <label>Nombre y Apellido</label>
+        <input type="text" name="user_name" />
+        <hr />
 
-        <img src={Picture}></img>
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <hr />
 
-        <Link to="/productos">
-          <h1>Nuestros Productos</h1>
-        </Link>
+        <label>Telefono</label>
+        <input type="number" name="user_phone" />
+        <hr />
 
-        <Link to="/">
-          <h1>Inicio</h1>
-        </Link>
-      </div>
-
-      <div className="description">
-        <p>
-          <b>Email </b> elifredmason@gmail.com
-        </p>
-        <br />
-        <p>
-          Nuestra base operativa se encuentra en yapeyu 795 villa Sarmiento
-          Moron
-        </p>
-        <br />
-        <p>Redes sociales; @bokadillosweb</p>
-        <br />
-      </div>
+        <label>Message</label>
+        <textarea name="user_message" id="" cols="30" rows="10"></textarea>
+        <hr />
+        <button>Send</button>
+      </form>
     </div>
   );
 };
 
-// https://www.youtube.com/watch?v=SrC1EaIBdUI formulario
+// se hizo el formulario con emailjs.com; usuario elifredmason@gmail.com password la misma de siemrpe
+// https://dashboard.emailjs.com/admin
+
+/* 
+
+
+        ----------------------------------
+
+       
+        */
+
+// https://www.youtube.com/watch?v=IvGzYJitqWg
+/* 
+ .sendForm(
+        "XXXXXXXXXXXX", ACA SE COPIA EL ID DE EMAILJS LOS PAAMETROS SE ENVIAN COMO STRING
+        "XXXXXXXXXXXX", ACA SE COPIA EL TEMPLATE, configuarar como llegara el mail del cliente LOS PAAMETROS SE ENVIAN COMO STRING
+        event.target,
+        "XXXXXXXXXXXX" ACA SE COLOCA EL ID USER DE MI CUENTA; LOS PAAMETROS SE ENVIAN COMO STRING
+      )
+
+      */

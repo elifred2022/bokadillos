@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Paginas } from "./componentes/Paginas";
 import { DataProvider } from "./context/Dataprovider";
 import { Carrito } from "./componentes/Carrito";
+import { Contactos } from "./componentes/Contactos";
 
 function App() {
   return (
