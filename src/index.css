@@ -224,6 +224,15 @@ header .cart span {
   width: 100%;
   margin: 0 auto;
   padding-top: 9rem;
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 10px 10px 2px rgb(0, 0, 0), .2;
+  border: 6px solid transparent;
+  border-radius: 5px;
+  
 }
 
 .inicio h1 {
@@ -232,9 +241,35 @@ header .cart span {
 }
 
 .inicio img {
-  width: 40%;
-  height: 50%;
+  width: 500px;
+  height: 250px;
 }
+
+.description {
+  width: 500px;
+  height: 250px;
+}
+
+li {
+  list-style: none;
+}
+
+.inicio ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+}
+
+.inicio ul li {
+  padding: 0 1rem;
+}
+
+.inicio ul li a {
+  font-weight: bold;
+}
+
+
 
 /******CONTACTOS********/
 
