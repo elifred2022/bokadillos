@@ -220,54 +220,90 @@ header .cart span {
 
 
 /******INICIO********/
-.inicio {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 9rem;
 
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 1px 10px 10px 2px rgb(0, 0, 0), .2;
-  border: 6px solid transparent;
-  border-radius: 5px;
-  
-}
-
-.inicio h1 {
-  font-size: 2.5rem;
+.title {
+  font-size: 2.4rem;
+  padding: 10rem 0 0 0;
   color: crimson;
+
 }
+
+
+.inicio {
+
+  padding: 5rem 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 2rem;
+  box-sizing: border-box;
+  align-items: flex-start; 
+}
+
+
 
 .inicio img {
-  width: 500px;
-  height: 250px;
+  width: 450px;
 }
 
-.description {
-  width: 500px;
-  height: 250px;
+/*
+.inicio .pic2 {
+  width: 450px;
+} */
+
+.seccion__productos {
+  font-size: 1rem;
+  padding: 10rem 0 0 0;
+  color: red; 
 }
 
-li {
-  list-style: none;
+.inicio__title {
+ 
+  padding: 10rem 0 0 0;
+  color: red; 
 }
 
-.inicio ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-
+.inicio__footer {
+  padding: 1rem;
 }
 
-.inicio ul li {
-  padding: 0 1rem;
+.inicio__footer h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: black;
+  font-family: Helvetica, sans-serif;
 }
 
-.inicio ul li a {
-  font-weight: bold;
+.inicio__footer p {
+  font-weight: 700;
+  color: rgba(0, 0, 0, .555);
+  text-transform: uppercase;
+  font-size: 18px;
 }
+
+.inicio__footer .price {
+  font-size: 2rem;
+  color: #1a202c;
+}
+
+.inicio .buttom {
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 3rem;
+}
+
+.inicio__footer .buttom {
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 2rem;
+}
+
 
 
 
@@ -690,3 +726,6 @@ button:focus {
       padding: 1rem 0;
   }
 }
+
+
+/* pagina css flex; https://www.aluracursos.com/blog/flexbox-css-guia-completo-elementos-y-ejemplos?gclid=CjwKCAjwo7iiBhAEEiwAsIxQEe5eKnaGAtVy8Ri_3AKqJYTyObzddPotuRqViWscm-y0DZQjyZQSExoCqSkQAvD_BwE  */
