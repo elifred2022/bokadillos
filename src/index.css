@@ -221,10 +221,13 @@ header .cart span {
 
 /******INICIO********/
 
-.title {
+
+
+.inicio__title {
+  margin-top: -50px;
   font-size: 2.4rem;
   padding: 10rem 0 0 0;
-  color: crimson;
+  color: red;
 
 }
 
@@ -233,13 +236,10 @@ header .cart span {
 
   padding: 5rem 1rem;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: left;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 3rem 2rem;
   box-sizing: border-box;
-  align-items: flex-start; 
 }
 
 
@@ -259,10 +259,19 @@ header .cart span {
   color: red; 
 }
 
-.inicio__title {
+
+
+.inicio__title2 {
  
-  padding: 10rem 0 0 0;
   color: red; 
+}
+
+.picture1  {
+  padding: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7rem 0 0 0;
+  
 }
 
 .inicio__footer {
@@ -352,7 +361,7 @@ hr {
 
 label {
   font-size: 1.5rem;
-  color: red; 
+  color: #ffff; 
   font-weight: 900;
   margin-bottom: 0.5rem;
 }

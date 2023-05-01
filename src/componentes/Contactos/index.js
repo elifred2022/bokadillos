@@ -34,10 +34,10 @@ export const Contactos = () => {
         <input type="number" name="user_phone" />
         <hr />
 
-        <label>Message</label>
+        <label>Deja tu mensaje</label>
         <textarea name="user_message" id="" cols="30" rows="10"></textarea>
         <hr />
-        <button>Send</button>
+        <button>Enviar</button>
       </form>
     </div>
   );
