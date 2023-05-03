@@ -7,13 +7,13 @@ export const Contactos = () => {
   const sendEmail = (event) => {
     event.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_04ub10z",
-        "template_gzz4xu5",
-        event.target,
-        "Lfqdb8OfXO68L-vVt"
-      )
+    emailjs.sendForm(
+      "service_04ub10z",
+      "template_gzz4xu5",
+      event.target,
+      "Lfqdb8OfXO68L-vVt"
+    );
+    alert("Su mensaje fue enviado con exito")
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
   };
