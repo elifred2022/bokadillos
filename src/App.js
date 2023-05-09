@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Header } from "./componentes/Header";
 //import { ProductosLista } from "./componentes/productos/index"; ////   <ProductosLista /> esto va en la funcion export*/
 import "boxicons";
@@ -6,7 +7,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { Paginas } from "./componentes/Paginas";
 import { DataProvider } from "./context/Dataprovider";
 import { Carrito } from "./componentes/Carrito";
-import { Contactos } from "./componentes/Contactos";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <Router>
           <Header />
           <Carrito />
+
           <Paginas />
         </Router>
       </div>
@@ -38,3 +39,5 @@ export default App;
 
 // OJO; usando etiqueta a si funcionan los link perro con etiqueta Link de react router
 // no funcionan. hay q refresacar para q funcione
+
+// esta aplicacion registra usuario y autentia con auth0
